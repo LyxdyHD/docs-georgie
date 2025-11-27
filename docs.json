@@ -9,8 +9,8 @@
   },
   "favicon": "/favicon.png?v-2",
   "logo": {
-    "light": "/images/vex-wordmark-light.png?v=1",
-    "dark": "/images/vex-wordmark-dark.png?v=1"
+    "light": "https://res.cloudinary.com/dffj8ly14/image/upload/v1764270338/vex-wordmark-dark_wtnf9o.svg",
+    "dark": "https://res.cloudinary.com/dffj8ly14/image/upload/v1764270339/vex-wordmark-light_hte7me.svg"
   },
   "navigation": {
     "tabs": [

@@ -1,0 +1,106 @@
+---
+title: "Text to Video"
+description: "Generate videos from text prompts with control over motion and style"
+mode: "wide"
+---
+
+## Overview
+
+Create videos directly from a prompt. Control duration, frame rate, stabilization, and style for predictable results.
+
+## Parameters
+
+- `durationSeconds`: Up to 8 seconds (default 8).
+- `stabilizationStrength`: Default 0.5; 0.3–0.7 reduces jitter while preserving dynamics.
+- `styleIntensity`: Default 0.6; 0.4–0.8 balances realism vs stylization.
+- `guidanceScale`: Default 7; 5–9 controls adherence to prompt.
+
+## Workflow
+
+- Write a clear prompt with subject, environment, camera, lighting, and motion.
+- Set duration (≤ 8s); adjust stabilization and style intensity.
+- Generate multiple takes; compare continuity, focus, and pacing.
+- Export MP4/WebM at the desired aspect ratio; upscale if needed.
+
+## Examples
+
+- Anime ceremonial dance — moonlit ruined courtyard; rain; cyan energy; dynamic camera moves; tranquil ending.
+- Bookstore golden hour — slow dolly; dust motes and god rays; intimate smile.
+- Subway isolation — handheld sway; grain and halation; tear catches flicker; warm station lights sweep in.
+
+## Tips
+
+- Include motion cues ("slow pan", "dynamic tracking", "steady cam") for camera behavior.
+- Use negative prompts ("no text overlays", "no artifacts") to reduce unwanted elements.
+- Save prompts and settings as presets for consistent branding.
+
+## Prompt formula
+
+Prompt = Subject + Subject Description + Subject Movement + Scene + Scene Description + Camera Language + Lighting + Atmosphere
+
+- Subject: main focus (person, object, place)
+- Subject Description: appearance, clothing, pose, attributes
+- Subject Movement: motion and beats across the clip
+- Scene: environment and context
+- Scene Description: concise details to set mood without overwhelming
+- Camera Language: lens, angles, moves, transitions
+- Lighting: source, quality, direction, color
+- Atmosphere: weather, particles, tone
+
+## Three examples
+
+<Columns cols={3}>
+  <div>
+    <h4>Anime — ceremonial dance</h4>
+    <p>Masterpiece anime style; moonlit ruined courtyard; rain; cyan particle energy; low angle, crash zoom, dutch angle, 360° arc; ends on serene smile.</p>
+  </div>
+  <div>
+    <h4>Bookstore — golden hour</h4>
+    <p>70s art‑house tone; slow dolly; 50mm f/1.4; warm film texture; dust motes and god rays; gentle smile on pull‑out.</p>
+  </div>
+  <div>
+    <h4>Subway — isolation</h4>
+    <p>90s indie vibe; handheld sway; 500T cinema look; grain, gate weave, halation; tear catches flicker; warm station sweep‑in.</p>
+  </div>
+</Columns>
+
+## Video gallery (8s max, start/pause only)
+
+<Columns cols={3}>
+  <div>
+    <video
+      className="w-full aspect-video rounded-xl"
+      src="https://res.cloudinary.com/dffj8ly14/video/upload/download_13_c1jasa.mp4"
+      controls
+      playsInline
+      loop
+      controlsList="nodownload noremoteplayback noplaybackrate"
+      disablePictureInPicture
+    ></video>
+    <div className="text-sm opacity-80">Anime — ceremonial dance</div>
+  </div>
+  <div>
+    <video
+      className="w-full aspect-video rounded-xl"
+      src="https://res.cloudinary.com/dffj8ly14/video/upload/download_12_bt4son.mp4"
+      controls
+      playsInline
+      loop
+      controlsList="nodownload noremoteplayback noplaybackrate"
+      disablePictureInPicture
+    ></video>
+    <div className="text-sm opacity-80">Bookstore — golden hour</div>
+  </div>
+  <div>
+    <video
+      className="w-full aspect-video rounded-xl"
+      src="https://res.cloudinary.com/dffj8ly14/video/upload/download_11_aaiuqa.mp4"
+      controls
+      playsInline
+      loop
+      controlsList="nodownload noremoteplayback noplaybackrate"
+      disablePictureInPicture
+    ></video>
+    <div className="text-sm opacity-80">Subway — isolation</div>
+  </div>
+</Columns>

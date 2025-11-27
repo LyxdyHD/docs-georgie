@@ -1,0 +1,79 @@
+---
+title: "Text to Image"
+description: "Generate high-quality images from detailed prompts"
+---
+
+## Overview
+
+Create photorealistic or stylized images using carefully crafted prompts. Use lens, lighting, composition, and film stock cues for predictable results.
+
+## Prompt formula
+
+Prompt = Subject + Subject Description + Camera + Lighting + Composition + Style + Details + Negative Prompts
+
+- Subject: main focus (person, object, scene)
+- Subject Description: appearance, clothing, pose, attributes
+- Camera: lens and aperture (e.g., 85mm f/1.4; 100mm macro f/2.8)
+- Lighting: source/quality/direction (e.g., soft window side light; golden hour rim)
+- Composition: macro, close-up, full body, symmetry
+- Style: film stock, color grading, grain
+- Details: textures, reflections, environment highlights
+- Negative Prompts: exclusions (e.g., no text overlays, no artifacts)
+
+## Three examples
+
+<Columns cols={3}>
+  <div>
+    <img src="/images/eye.jfif" alt="Eye macro close-up" className="w-full rounded-xl" noZoom />
+    <div className="text-sm opacity-80">Macro iris detail; soft window side light; 100mm macro f/2.8; Portra 400 texture; subtle chromatic aberration.</div>
+  </div>
+  <div>
+    <img src="/images/smile.jfif" alt="Joyful smile in meadow" className="w-full rounded-xl" noZoom />
+    <div className="text-sm opacity-80">Full‑body twirl; golden hour rim light; 85mm f/1.4; warm anamorphic flare; Kodak Gold color; natural skin texture.</div>
+  </div>
+  <div>
+    <img src="/images/woman.jfif" alt="Laundromat boredom" className="w-full rounded-xl" noZoom />
+    <div className="text-sm opacity-80">Late‑night laundromat; fluorescent flat light; point‑and‑shoot flash; heavy digital grain; low‑res aesthetic; date stamp.</div>
+  </div>
+</Columns>
+
+## Tips
+
+ - Use lens and aperture details (e.g., 85mm f/1.4) to control depth of field.
+ - Specify lighting (golden hour rim light, soft window light) for mood and realism.
+ - Add film stock cues (Kodak Portra 400, Gold 200) for color and grain character.
+
+## How to craft great prompts
+
+- Subject: who/what is the focus (e.g., "young woman", "retro sports car")
+- Environment: where and when (e.g., "wild meadow at golden hour")
+- Lighting: quality and direction (e.g., "dramatic backlight rim")
+- Camera: lens and aperture (e.g., "85mm f/1.4 low angle")
+- Composition: close-up, macro, full body, symmetry
+- Style: film stock, color grading, grain, chromatic aberration
+- Details: props, textures, motion hints
+- Negative prompts: exclusions (e.g., "no text overlays", "no artifacts")
+
+### Realistic examples
+
+- Portrait, soft window light, 50mm f/1.8, shallow depth, Kodak Portra 400, natural skin texture, no retouching, no text overlays
+- City night scene, rain, neon reflections, 35mm f/2, moody blue/cyan grading, cinematic bokeh, no lens distortion
+- Product on matte background, softbox lighting, 70mm f/4, subtle shadow, high micro-contrast, no fingerprints
+
+### Anime/illustration examples
+
+- Anime girl in cherry blossom park, pastel palette, soft rim light, 2D cel shading, gentle bloom, Studio Ghibli style, no banding
+- Cyberpunk anime street, neon kanji signs, rainy night, high contrast cel shading, magenta-teal palette, dynamic perspective, no artifacts
+- Fantasy character portrait, painterly brushwork, warm light, depth in hair highlights, subtle film grain overlay, no watermark
+
+### Common mistakes to avoid
+
+- Vague prompts without camera/lighting → unpredictable style
+- Overloaded style cues → conflicting aesthetics
+- Missing negative prompts → text overlays or artifacts
+
+### Parameters cheat sheet
+
+- Size: choose aspect ratio based on use (1:1, 9:16, 16:9)
+- Guidance: increase to adhere to prompt; reduce for creativity
+- Style strength: lower for realism; higher for stylization

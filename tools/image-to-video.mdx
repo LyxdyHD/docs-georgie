@@ -1,0 +1,99 @@
+---
+title: "Image to Video"
+description: "Animate a single image or storyboard into motion"
+---
+
+## Overview
+
+Start from a still image and add motion. Great for product shots, key art, and social posts.
+
+## Source guidelines
+
+- High-resolution images with clear subjects and clean composition work best.
+- Avoid heavy compression and extreme blur.
+- Ensure important regions (faces, logos) are unobstructed for better fidelity.
+
+## Parameters
+
+- `durationSeconds`: Up to 8 seconds (default 8).
+- `motionStrength`: Default 0.6; 0.3–0.8 determines intensity.
+- `motionDirection`: e.g., pan left/right, zoom in/out, parallax layers.
+- `stabilizationStrength`: Default 0.5; reduces jitter.
+
+## Workflow
+
+- Upload your base image.
+- Choose motion type and strength; set duration and frame rate.
+- Generate multiple takes and evaluate subject stability and background motion.
+- Refine with Motion Brush for targeted movement; export and upscale as needed.
+
+## Prompt formula
+
+Prompt = Subject + Subject Description + Movement + Scene + Scene Details + Camera + Lighting + Atmosphere
+
+- Movement defines the motion beats (pan, zoom, parallax, ambient effects)
+- Keep prompts concise and focused to preserve the source composition
+
+## Examples
+
+- Product parallax: foreground stable, background gentle parallax left → right.
+  Settings: `durationSeconds=6`, `motionStrength=0.5`, `stabilizationStrength=0.6`
+
+- Landscape push‑in: slow zoom across a sunset vista.
+  Settings: `durationSeconds=8`, `motionStrength=0.4`, `motionDirection=zoom-in`
+
+## Image → Video gallery
+
+<Columns cols={3}>
+  <div>
+    <img src="/images/aaa.jpg" alt="Source photo" className="w-full rounded-xl" noZoom />
+    <div>
+      Low‑angle static; rainy noir alley; pushed Vision3 500T look; drizzle, neon flicker, steam; subtle breath; eyelids slowly open; 4s cut.
+    </div>
+    <video
+      className="w-full rounded-xl"
+      style={{aspectRatio: "1 / 1", objectFit: "cover"}}
+      src="https://res.cloudinary.com/dffj8ly14/video/upload/v1764254939/download_14_xa2xif.mp4"
+      controls
+      playsInline
+      muted
+      loop
+      controlsList="nodownload noremoteplayback noplaybackrate"
+      disablePictureInPicture
+    ></video>
+  </div>
+  <div>
+    <img src="/images/sss.jpg" alt="Source photo" className="w-full rounded-xl" noZoom />
+    <div>
+      Static rainy platform through window; warm horizontal flare; pensive expression; subtle eye glisten and breath; hold on mood; 4s.
+    </div>
+    <video
+      className="w-full rounded-xl"
+      style={{aspectRatio: "1 / 1", objectFit: "cover"}}
+      src="https://res.cloudinary.com/dffj8ly14/video/upload/v1764254944/download_15_esu6hy.mp4"
+      controls
+      playsInline
+      muted
+      loop
+      controlsList="nodownload noremoteplayback noplaybackrate"
+      disablePictureInPicture
+    ></video>
+  </div>
+  <div>
+    <img src="/images/ddd.jpg" alt="Source photo" className="w-full rounded-xl" noZoom />
+    <div>
+      Dark scriptorium; chiaroscuro; candle warm key; book glows with purple energy; particles/runes rise; eyes glow; cape billow; freeze on climax; 4s.
+    </div>
+    <video
+      className="w-full rounded-xl"
+      style={{aspectRatio: "1 / 1", objectFit: "cover"}}
+      src="https://res.cloudinary.com/dffj8ly14/video/upload/v1764254948/download_16_sfwgoj.mp4"
+      controls
+      playsInline
+      muted
+      loop
+      controlsList="nodownload noremoteplayback noplaybackrate"
+      disablePictureInPicture
+    ></video>
+  </div>
+</Columns>
